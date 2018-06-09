@@ -1,2 +1,2 @@
 apiVersion: v1
-name: <%= quote(name) %>
+name: <%=  quote(name) %>

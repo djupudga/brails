@@ -49,8 +49,8 @@ spec:
   selector:
     app: my-app
   ports:
-    port: <% myService.externalPort %>
-    targetPort: <% myService.internalPort %>
+    port: <%= myService.externalPort %>
+    targetPort: <%= myService.internalPort %>
 
 # extraService.yaml
 <% if (extraService.enabled) { %>
