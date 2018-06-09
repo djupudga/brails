@@ -1,4 +1,4 @@
-# Brails
+# Brails - Ropes on edge of sail for hauling up
 
 Simple templating tool, inspired by Helm.
 
