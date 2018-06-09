@@ -2,6 +2,12 @@
 
 Simple templating tool, inspired by Helm.
 
+# TODO
+
+- Support EJS and Handlebars
+- Add `-c` flag to choose a config file
+- Add `.brails.json` file as a config file
+
 # Installation
 
 ```
