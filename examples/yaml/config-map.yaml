@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config.txt
+data:
+  config.txt: |-
+<%- indent(getFile('config.txt'), 4) %>
