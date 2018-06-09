@@ -2,6 +2,10 @@
 
 Simple templating tool, inspired by Helm.
 
+# TODO
+
+- Test other template engines, handlebars etc.
+
 # Installation
 
 ```
