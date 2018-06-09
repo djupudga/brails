@@ -23,6 +23,13 @@ brails -f path/to/yaml/file/or/files -d overrides.yaml
 The above command inserts overrides defined in the `overrides.yaml` file
 into the target YAML files using the Mustache template language.
 
+You can omit the `-d` flag, but then brails expects a `data.y(a)ml` to reside
+in the same directory where it is executed. Thus, a minimal command would be:
+
+```
+cat some.yaml | brails
+```
+
 # Examples
 
 ```
