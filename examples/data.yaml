@@ -1,0 +1,4 @@
+name: Hello World
+service:
+  enabled: true
+  name: kalle

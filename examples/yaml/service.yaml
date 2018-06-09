@@ -1,0 +1,10 @@
+<% if (service.enabled) { %>
+<% let serviceName = service.name.toUpperCase() %>
+apiVersion: v1
+kind: Service
+metadata:
+  name: <%- serviceName %>
+  actualName: <%= quote(name) %>
+spec:
+  port: 80
+<% } %>

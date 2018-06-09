@@ -17,7 +17,7 @@ brails -f path/to/yaml/file/or/files -d overrides.yaml
 ```
 
 The above command inserts overrides defined in the `overrides.yaml` file
-into the target YAML files using a template language similar to Mustache.
+into the target YAML files using the Mustache template language.
 
 # Examples
 
@@ -38,11 +38,11 @@ spec:
   selector:
     app: my-app
   ports:
-    port: {{ myService.externalPort }}
-    targetPort: {{ myService.internalPort }}
+    port: <% myService.externalPort %>
+    targetPort: <% myService.internalPort %>
 
 # extraService.yaml
-{{ if (extraService.enabled) { }}
+<% if (extraService.enabled) { %>
 apiVersion: v1
 kind: Service
 metadata:
@@ -52,6 +52,6 @@ spec:
     app: extra-app
   ports:
     port: 8080
-{{ } }}
+<% } %>
 
 ```
