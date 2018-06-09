@@ -12,6 +12,9 @@ Simple templating tool, inspired by Helm.
 git clone https://github.com/djupudga/brails.git
 cd brails
 npm link
+
+# To test run:
+brails -f examples/yaml -d examples/data.yaml
 ```
 
 # Usage
@@ -49,8 +52,8 @@ spec:
   selector:
     app: my-app
   ports:
-    port: <%= myService.externalPort %>
-    targetPort: <%= myService.internalPort %>
+    port: <%- myService.externalPort %>
+    targetPort: <%- myService.internalPort %>
 
 # extraService.yaml
 <% if (extraService.enabled) { %>
