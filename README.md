@@ -2,6 +2,14 @@
 
 Simple templating tool, inspired by Helm.
 
+# Installation
+
+```
+git clone https://github.com/djupudga/brails.git
+cd brails
+npm link
+```
+
 # Usage
 
 ```
