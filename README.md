@@ -11,6 +11,9 @@ Prerequisites:
 ```
 curl -o- https://raw.githubusercontent.com/djupudga/brails/master/install.sh | bash
 
+# Verify installation
+brails --help
+
 # To try it with examples, run:
 brails -f examples/ejs -d examples/data.yaml
 ```
