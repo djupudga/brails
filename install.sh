@@ -9,5 +9,5 @@ npm link
 #echo "PATH=$PATH:$HOME/.brails/bin" >> $HOME/.zshrc
 # else assume bash
 echo "Brails installed"
-echo "Paste this in your shell to use it now:"
-echo "export PATH=$PATH:$HOME/.brails/bin"
+# echo "Paste this in your shell to use it now:"
+# echo "export PATH=$PATH:$HOME/.brails/bin"

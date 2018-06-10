@@ -10,6 +10,9 @@
   "author": "Helgi Kristjansson <helgi.kristjansson@gmail.com> (https://www.djupudga.com)",
   "repository": "https://github.com/fareoffice/brails.git",
   "license": "MIT",
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "dependencies": {
     "ejs": "^2.6.1",
     "get-stdin": "^6.0.0",

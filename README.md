@@ -10,13 +10,14 @@ Simple templating tool, inspired by Helm.
 
 # Installation
 
-```
-git clone https://github.com/djupudga/brails.git
-cd brails
-npm install
-npm link
+Prerequisites:
+- git
+- node (v8 or higher)
 
-# To test run:
+```
+curl -o- https://raw.githubusercontent.com/djupudga/brails/master/install.sh | bash
+
+# To try it with examples, run:
 brails -f examples/yaml -d examples/data.yaml
 ```
 
