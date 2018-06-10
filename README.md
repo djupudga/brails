@@ -13,6 +13,7 @@ Simple templating tool, inspired by Helm.
 ```
 git clone https://github.com/djupudga/brails.git
 cd brails
+npm install
 npm link
 
 # To test run:
