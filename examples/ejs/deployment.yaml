@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: <%- name %>
+  namespace: <%- namespace %>
+spec:
+  selector:
+    matchLabels:
+      app: <%- name %>
+  replicas: <%- deployment.replicas %>
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: <%- name %>
+    spec:
+      containers:
+      - name: <%- name %>
+        image: repo/<%- env.REPOSITORY_NAME %>:<%- env.GIT_COMMIT %>
+        imagePullPolicy: <%- deployment.imagePullPolicy %>
+        resources:
+<%- indent(toYaml(deployment.resources), 10) %>
+        ports:
+        - containerPort: <%- service.internalPort %>
+        envFrom:
+        - configMapRef:
+            name: <%- configFile %>
