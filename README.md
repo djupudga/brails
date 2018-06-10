@@ -12,7 +12,7 @@ Prerequisites:
 curl -o- https://raw.githubusercontent.com/djupudga/brails/master/install.sh | bash
 
 # To try it with examples, run:
-brails -f examples/yaml -d examples/data.yaml
+brails -f examples/ejs -d examples/data.yaml
 ```
 
 # Usage

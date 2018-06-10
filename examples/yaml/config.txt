@@ -1,3 +1,0 @@
-DB=mydb
-USER=root
-PASSWORD=password

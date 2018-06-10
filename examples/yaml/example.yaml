@@ -1,5 +1,0 @@
-apiVersion: v1
-kind: Something
-name: <%-  quote(name) %>
-annotations:
-<%- indent(toYaml(service.annotations), 2) %>
