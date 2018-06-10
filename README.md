@@ -31,6 +31,23 @@ in the same directory where it is executed. Thus, a minimal command would be:
 cat some.yaml | brails
 ```
 
+In addition to data from the `data.y(a)ml` being accessible in the YAML template
+files, environment variables are accessible via the `env` variable.
+For example, assuming the env var `REPOSITORY_NAME` is set, it can be
+referenced within a YAML template like this (handlebars example):
+
+```
+apiVersion: apps/v1
+kind: Deployment
+spec:
+  template:
+    spec:
+      containers:
+      - name: foo
+        image: repository/{{ env.REPOSITORY_NAME }}:latest
+
+```
+
 # Configuration
 
 By default, the EJS template language is used. This allows you to embed
