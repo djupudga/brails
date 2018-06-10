@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config.txt
+  bar: {{ service.name }}
+data:
+  config.txt: |-
+{{ indent (getFile 'config.txt') 4 }}
