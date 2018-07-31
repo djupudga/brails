@@ -11,6 +11,7 @@ deployment:
       cpu: 100m
       memory: 200Mi
 service:
+  enabled: true
   type: NodePort
   internalPort: 8080
   externalPort: 80
