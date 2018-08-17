@@ -1,0 +1,3 @@
+engine: ejs
+data: examples/data.yaml
+file: examples/ejs

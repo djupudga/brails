@@ -1,0 +1,3 @@
+engine: handlebars
+data: examples/data.yaml
+file: examples/handlebars
