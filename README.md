@@ -56,19 +56,22 @@ spec:
 By default, the EJS template language is used. This allows you to embed
 JavaScript code in the YAML template files. The other template engine is
 Handlebars. In order to use that, you either provide a `-c` flag pointing
-to a config file, or create a `.brailsrc.json` file in the root folder of
-where you execute the `brails` command. You may also have a `.brailsrc.json`
+to a config file, or create a `.brailsrc` file in the root folder of
+where you execute the `brails` command. You may also have a `.brailsrc`
 file in your home folder.
 
+The `-e` engine flag can also be used. The `.brailsrc` can be configured
+to contain all non-abbreviated flags available to brails.
+
 ```
-# .brailsrc.json for handlebars
+# .brailsrc for handlebars
 {
-  "templateEngine": "handlebars"
+  "engine": "handlebars"
 }
 
-# .brailsrc.json for ejs
+# .brailsrc for ejs
 {
-  "templateEngine": "ejs"
+  "engine": "ejs"
 }
 ```
 
