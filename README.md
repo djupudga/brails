@@ -4,7 +4,22 @@ Simple templating tool, inspired by Helm.
 
 # Installation
 
+Download the latest release from the release page:
+https://github.com/djupudga/brails/releases.
+
+Move the downloaded file to your **PATH** and make it executable. For example
+for linux, you would do this:
+
+```shell
+cd Downloads
+chmod +x brails-linux
+sudo mv brails-linux /usr/bin/brails
+```
+
+## Install using node.js
+
 Prerequisites:
+
 - git
 - node (v8 or higher)
 
@@ -20,65 +35,8 @@ brails -f examples/ejs -d examples/data.yaml
 
 # Usage
 
-```
-brails -f path/to/yaml/file/or/files -d overrides.yaml
-```
-
-The above command inserts overrides defined in the `overrides.yaml` file
-into the target YAML files using the EJS or Handlebars template language.
-
-You can omit the `-d` flag, but then brails expects a `data.y(a)ml` to reside
-in the same directory where it is executed. Thus, a minimal command would be:
-
-```
-cat some.yaml | brails
-```
-
-In addition to data from the `data.y(a)ml` being accessible in the YAML template
-files, environment variables are accessible via the `env` variable.
-For example, assuming the env var `REPOSITORY_NAME` is set, it can be
-referenced within a YAML template like this (handlebars example):
-
-```
-apiVersion: apps/v1
-kind: Deployment
-spec:
-  template:
-    spec:
-      containers:
-      - name: foo
-        image: repository/{{ env.REPOSITORY_NAME }}:latest
-
-```
-
-# Configuration
-
-By default, the EJS template language is used. This allows you to embed
-JavaScript code in the YAML template files. The other template engine is
-Handlebars. In order to use that, you either provide a `-c` flag pointing
-to a config file, or create a `.brailsrc` file in the root folder of
-where you execute the `brails` command. You may also have a `.brailsrc`
-file in your home folder.
-
-The `-e` engine flag can also be used. The `.brailsrc` can be configured
-to contain all non-abbreviated flags available to brails.
-
-```
-# .brailsrc for handlebars
-{
-  "engine": "handlebars"
-}
-
-# .brailsrc for ejs
-{
-  "engine": "ejs"
-}
-```
+Run `brails --help` information on how to use it.
 
 # Examples
 
 Check out the `examples` folder for EJS and Handlebars template examples.
-
-# TODO
-
-- Tests
