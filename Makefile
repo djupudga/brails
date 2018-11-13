@@ -7,7 +7,7 @@ deps:
 build: clean
 	pkg . -t node10-linux-x64,node10-macos-x64,node10-alpine-x64 --out-path dist
 
-build-docker:
+docker-build:
 	$(eval version := $(shell cat package.json | grep version | cut -d ":" -f 2 | cut -d "\"" -f 2))
 	docker build -t djupudga/brails:$(version) .
 	docker tag djupudga/brails:$(version) djupudga/brails:latest

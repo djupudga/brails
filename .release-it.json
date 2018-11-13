@@ -1,0 +1,12 @@
+{
+  "src": {
+    "tagName": "v%s"
+  },
+  "github": {
+    "release": true
+  },
+  "npm": {
+    "publish": false
+  },
+  "buildCommand": "make"
+}
