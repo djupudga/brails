@@ -1,6 +1,6 @@
 {
   "name": "brails",
-  "version": "0.1.7",
+  "version": "v0.1.7",
   "description": "Kubernetes pre-processor",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,7 @@
     "meow": "^5.0.0"
   },
   "devDependencies": {
-    "prettier": "^1.15.3"
+    "prettier": "^1.15.3",
+    "release-it": "^9.7.0"
   }
 }
