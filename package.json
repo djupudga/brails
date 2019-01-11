@@ -1,6 +1,6 @@
 {
   "name": "brails",
-  "version": "v0.1.8",
+  "version": "0.1.9",
   "description": "Kubernetes pre-processor",
   "main": "index.js",
   "scripts": {
