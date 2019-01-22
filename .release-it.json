@@ -8,5 +8,7 @@
   "npm": {
     "publish": false
   },
-  "buildCommand": "make"
+  "scripts": {
+    "beforeStage": "make"
+  }
 }

@@ -23,7 +23,7 @@ release-test:
 
 release: release-test release-it-version github-release docker-build docker-push
 
-release-patch: release-it-patch github-release docker-build docker-push
+release-patch: build release-it-patch github-release docker-build docker-push
 
 release-it-version:
 	npx release-it $(version) -n
