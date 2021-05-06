@@ -16,7 +16,7 @@
   "dependencies": {
     "ejs": "^2.7.4",
     "get-stdin": "^6.0.0",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "indent-string": "^3.2.0",
     "js-yaml": "^3.14.0",
     "meow": "^8.0.0"
