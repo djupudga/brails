@@ -40,3 +40,5 @@ Run `brails --help` information on how to use it.
 # Examples
 
 Check out the `examples` folder for EJS and Handlebars template examples.
+
+# Now featuring sturdy..!!
